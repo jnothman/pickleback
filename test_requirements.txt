@@ -1,3 +1,7 @@
-matplotlib
+setuptools
 pytest
 flake8
+pytest-cov
+python-coveralls
+
+matplotlib
