@@ -2,7 +2,7 @@
 
 import os
 import sys
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 def setup_package():
@@ -15,7 +15,7 @@ def setup_package():
         # See setup.cfg
         setup(name='pickleback',
               version='0.1a1',
-              py_modules=['pickleback'],
+              packages=find_packages(),
               setup_requires=['pytest-runner'],
               tests_require=['pytest>=2.7', 'pytest-cov~=2.4', 'matplotlib'],
               )
